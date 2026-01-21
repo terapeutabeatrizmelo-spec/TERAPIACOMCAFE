@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
               <video
                 src="/butterfly-video.mp4"
                 className="w-full h-full object-cover pointer-events-none"
-                style={{ transform: 'scale(1.05)' }} // Slight zoom to crop black borders
+                style={{ transform: 'scale(1.35)' }} // Zoom 35% to crop large black borders
                 autoPlay
                 loop
                 muted
