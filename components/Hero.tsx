@@ -52,44 +52,31 @@ export const Hero: React.FC = () => {
           {/* Image Content */}
           <div className="order-1 lg:order-2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-              <img
-                src="/hero-beatriz-final.jpg"
-                alt="Beatriz Melo - Terapeuta Comportamental"
-                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+              <video
+                src="/butterfly-video.mp4"
+                className="w-full h-full object-cover pointer-events-none"
+                style={{ transform: 'scale(1.05)' }} // Slight zoom to crop black borders
+                autoPlay
+                loop
+                muted
+                playsInline
               />
-              <div className="absolute inset-0 pointer-events-none">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="absolute object-cover"
-                  style={{
-                    top: '36%',
-                    left: '9%',
-                    width: '50.5%',
-                    height: '46%'
-                  }}
-                >
-                  <source src="/butterfly-video.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div className="absolute inset-0 bg-primary mix-blend-multiply opacity-10"></div>
             </div>
-
-            {/* Floating Card Element */}
-            <div className="absolute -bottom-6 -left-6 md:bottom-10 md:-left-10 bg-white p-6 rounded-xl shadow-xl max-w-xs border-l-4 border-primary hidden md:block">
-              <p className="font-display font-bold text-dark text-lg">"Estratégias práticas baseadas em ciência."</p>
-              <p className="text-gray-500 text-sm mt-1">— Beatriz Melo</p>
-            </div>
+            <div className="absolute inset-0 bg-primary mix-blend-multiply opacity-10"></div>
           </div>
 
+          {/* Floating Card Element */}
+          <div className="absolute -bottom-6 -left-6 md:bottom-10 md:-left-10 bg-white p-6 rounded-xl shadow-xl max-w-xs border-l-4 border-primary hidden md:block">
+            <p className="font-display font-bold text-dark text-lg">"Estratégias práticas baseadas em ciência."</p>
+            <p className="text-gray-500 text-sm mt-1">— Beatriz Melo</p>
+          </div>
         </div>
+
       </div>
 
       {/* Background Decor */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
-    </section>
+    </section >
   );
 };
