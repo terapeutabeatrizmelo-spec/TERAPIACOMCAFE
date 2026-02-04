@@ -18,10 +18,6 @@ const faqData: FAQItem[] = [
         question: "Qual o investimento para as sessões?",
         answer: "Os valores são personalizados de acordo com a frequência e modalidade de atendimento. Entre em contato via WhatsApp para receber informações detalhadas sobre investimento.",
     },
-    {
-        question: "Como solicitar o Kit Comportamental gratuito?",
-        answer: "Basta clicar no botão 'Receber Meu Kit' e você será direcionado para o WhatsApp. Enviaremos imediatamente os 3 materiais práticos (Áudio, Tracker e Checklist) para você começar sua jornada de autoconhecimento.",
-    },
 ];
 
 export const FAQ: React.FC = () => {

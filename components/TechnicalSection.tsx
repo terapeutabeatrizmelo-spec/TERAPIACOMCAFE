@@ -36,7 +36,7 @@ export const TechnicalSection: React.FC = () => {
                                 Minha prática é estruturada, mensurável e orientada para resultados. Trabalho com foco em análise funcional, desenvolvimento de habilidades emocionais e ressignificação de padrões comportamentais e fortalecimento de autonomia.
                             </p>
                             <p className="italic text-gray-600 border-l-4 border-secondary pl-4">
-                                "A missão é simples: transformar a vida do cliente com estratégias claras, aplicáveis e que realmente funcionam no dia a dia."
+                                "A missão é oferecer um espaço terapêutico baseado em evidências, voltado à compreensão dos padrões de comportamento e ao cuidado com o sofrimento emocional."
                             </p>
                         </div>
 
