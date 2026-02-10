@@ -7,6 +7,7 @@ import { AreasOfExpertise } from '../components/AreasOfExpertise';
 import { FAQ } from '../components/FAQ';
 import { Process } from '../components/Process';
 import { BlogPreview } from '../components/BlogPreview';
+import { AccessCounter } from '../components/AccessCounter';
 
 export const LandingPage: React.FC = () => {
     return (
@@ -18,6 +19,7 @@ export const LandingPage: React.FC = () => {
             <Process />
             <BlogPreview />
             <FAQ />
+            <AccessCounter />
         </Layout>
     );
 };

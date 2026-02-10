@@ -20,6 +20,7 @@ function App() {
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
+        <Route path="/admin-stats" element={<LandingPage />} />
       </Routes>
       <CookieBanner />
     </>

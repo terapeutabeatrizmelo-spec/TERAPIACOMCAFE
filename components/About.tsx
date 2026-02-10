@@ -17,7 +17,7 @@ export const About: React.FC = () => {
 
             <div className="prose prose-lg text-gray-700 space-y-4 text-justify leading-relaxed">
               <p>
-                Minha história não começou fácil, começou com ausência. Quando eu tinha 4 anos, minha mãe nos abandonou. Fui criada só pelo meu pai. Cresci em um ambiente marcado pelo alcoolismo e por muita solidão emocional, e aprendi cedo a seguir em frente, mesmo com o coração pedindo colo.
+                Minha história não começou fácil, começou com ausência. Quando eu tinha 4 anos, minha mãe nos abandonou. Fui criada só pelo meu pai. Cresci em um ambiente marcado pela solidão emocional, e aprendi cedo a seguir em frente, mesmo com o coração pedindo colo.
               </p>
               <p>
                 Cresci carregando pesos que não eram meus. Mas uma coisa eu decidi: aquela história não seria o meu destino.
