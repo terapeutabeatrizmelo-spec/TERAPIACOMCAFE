@@ -48,7 +48,7 @@ export const About: React.FC = () => {
           </div>
 
           {/* Image/Visual Content */}
-          <div className="relative order-1 md:order-2">
+          <div className="relative order-1 md:order-2 flex flex-col h-full">
             <div className="rounded-2xl overflow-hidden shadow-xl border-8 border-white bg-sand">
               <img
                 src="/family-beach.png"
@@ -56,7 +56,23 @@ export const About: React.FC = () => {
                 className="w-full h-auto"
               />
             </div>
-            {/* Badge removed as requested */}
+            
+            {/* Card de Transparência - Alinhado à Borboleta na Desktop */}
+            <div className="mt-8 md:mt-auto bg-neutral p-6 rounded-xl border border-gray-200 shadow-sm">
+                <div className="mb-4 border-b border-gray-200/60 pb-3">
+                    <h4 className="font-bold text-dark text-lg flex items-center gap-2">
+                       <span className="text-secondary text-xl">ℹ️</span> Transparência e Ética
+                    </h4>
+                    <p className="text-black font-bold text-base mt-2">Qual a diferença entre Psicólogo e Terapeuta?</p>
+                </div>
+                <div className="text-sm text-gray-700 space-y-3">
+                    <p><strong className="text-dark">Psicólogo</strong> → pode atuar clinicamente, fazer diagnósticos e utilizar abordagens psicológicas regulamentadas.</p>
+                    <p><strong className="text-dark">Terapeuta</strong> → pode trabalhar acolhimento, escuta, orientação emocional e estratégias de desenvolvimento, dependendo da formação dele.</p>
+                    <div className="bg-primary/10 p-3 rounded-lg border-l-2 border-primary mt-2">
+                        <p><strong className="text-dark">Na prática:</strong> O psicólogo atua dentro da Psicologia regulamentada. O terapeuta atua em processos terapêuticos e desenvolvimento humano, mas sem exercer funções exclusivas da Psicologia.</p>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
 

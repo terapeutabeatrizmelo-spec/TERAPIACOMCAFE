@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Hero } from '../components/Hero';
 import { About } from '../components/About';
 import { AreasOfExpertise } from '../components/AreasOfExpertise';
+import { ChildDevelopment } from '../components/ChildDevelopment';
 import { Process } from '../components/Process';
 import { BlogPreview } from '../components/BlogPreview';
 import { LeadMagnet } from '../components/LeadMagnet';
@@ -28,6 +29,7 @@ export const Home: React.FC = () => {
       <Hero />
       <About />
       <AreasOfExpertise />
+      <ChildDevelopment />
       <Process />
       <LeadMagnet />
       <BlogPreview />

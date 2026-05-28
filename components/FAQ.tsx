@@ -2,13 +2,23 @@ import React, { useState } from 'react';
 
 interface FAQItem {
     question: string;
-    answer: string;
+    answer: React.ReactNode;
 }
 
 const faqData: FAQItem[] = [
     {
         question: "Como funciona o atendimento online?",
         answer: "As sessões são realizadas por videochamada, em ambiente seguro e confidencial. Você pode participar de qualquer lugar, precisando apenas de conexão à internet estável.",
+    },
+    {
+        question: "Qual a diferença entre Psicólogo e Terapeuta?",
+        answer: (
+            <div className="space-y-3">
+                <p><strong className="text-dark">Psicólogo</strong> → pode atuar clinicamente, fazer diagnósticos e utilizar abordagens psicológicas regulamentadas.</p>
+                <p><strong className="text-dark">Terapeuta</strong> → pode trabalhar acolhimento, escuta, orientação emocional e estratégias de desenvolvimento, dependendo da formação dele.</p>
+                <p><strong className="text-dark">Na prática:</strong> O psicólogo atua dentro da Psicologia regulamentada. O terapeuta atua em processos terapêuticos e desenvolvimento humano, mas sem exercer funções exclusivas da Psicologia.</p>
+            </div>
+        ),
     },
     {
         question: "Qual a duração das sessões?",

@@ -61,22 +61,32 @@ O projeto segue uma estrutura modular em `src/components`:
 
 ## 4. Infraestrutura & Deploy
 
-### ☁️ Netlify
+### 🚀 Vercel (Infraestrutura Ativa - Migração em 28/05/2026)
+Devido a uma suspensão temporária da conta Netlify (falha de pagamento), a infraestrutura de produção foi migrada em caráter de contingência e estabilização para a Vercel (Plano Hobby/Free Tier).
+- **Conta Vercel:** Integrada via GitHub
+- **Projeto Vercel:** `terapiacomcafe`
+- **URL Nativa (Vercel):** `https://terapiacomcafe.vercel.app`
+- **Build Command:** Autodetectado (Vite) / `npm run build`
+- **Publish Directory:** `dist`
+
+### ☁️ Netlify (Infraestrutura Legada / Backup)
 - **Conta:** Beatriz Melo (`terapeuta.beatrizmelo@gmail.com`)
 - **Time:** `TERAPIACOMCAFE`
 - **Nome do Site:** `beatriz-terapia`
 - **URL Nativa:** `https://beatriz-terapia.netlify.app`
-- **Build Command:** `npm run build`
-- **Publish Directory:** `dist`
+- **Status da Conta:** Suspensa (Hibernação). A conta não foi alterada e os deploys continuam lá caso a reativação financeira seja decidida no futuro.
 
 ### 🌐 Domínio & DNS
-**Domínio:** `terapiacomcafe.com.br` (Registro.br)
+**Domínio:** `terapiacomcafe.com.br` (Gerenciado no Registro.br)
+**Conta Registro.br (Código):** `BNSME3` (Titular: Beatriz Nunes Da Silva Melo)
 
-**Configuração DNS Atual:**
-- **Tipo A:** `@` → `75.2.60.5` (Netlify Load Balancer)
-- **CNAME:** `www` → `beatriz-terapia.netlify.app`
+**Configuração DNS Atual (Apontando para Vercel):**
+- **Tipo A:** `(Nome Vazio / @)` → `76.76.21.21` (IP da Vercel)
+- **CNAME:** `www` → `cname.vercel-dns.com`
 
-⚠️ **Status:** Configurado em 16/12/2025. Aguardando propagação total (até 24h).
+⚠️ **Status Histórico de DNS:**
+*   **16/12/2025:** Apontamento inicial configurado para Netlify (`75.2.60.5` / `beatriz-terapia.netlify.app`).
+*   **28/05/2026:** Migração bem sucedida de DNS para Vercel devido a suspensão. Registros antigos do Netlify foram removidos da Zona DNS do Registro.br. SSL é provisionado automaticamente pela Vercel.
 
 ---
 
